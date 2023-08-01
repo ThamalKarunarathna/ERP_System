@@ -40,7 +40,7 @@
             <h2 class="text-center mb-4 text-light">Invoice Report</h2> <!-- Set text color to white -->
             <div class="row justify-content-center"> <!-- Center the form horizontally -->
                 <div class="col-md-8"> <!-- Set the container width for medium-sized devices -->
-                    <form action="generate_invoice_report.php" method="post">
+                    <form action="invoice_report.php" method="post">
                         <div class="row">
                             <div class="col-md-8 mb-2"> <!-- Set the input width for medium-sized devices -->
                                 <label for="start_date" class="mr-2 text-light">Start Date:</label> <!-- Set label text color to white -->

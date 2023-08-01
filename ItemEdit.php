@@ -119,6 +119,7 @@ if(isset($_POST['submit']))
 <!-- update form -->
 <div class="d-flex justify-content-center">
     <div class="card text-white bg-secondary" style="width: 800px;">
+    <br>
     <form id="item-form" class="form-horizontal col-lg-8 offset-lg-2" method="POST">
         <fieldset>
             <div class="row pb-2">
@@ -129,7 +130,7 @@ if(isset($_POST['submit']))
 
             <div class="form-group">
                 <label for="inputitemcode" class="col-lg-2 control-label text-right">Item Code</label>
-                <div class="col-lg-8">
+                <div class="col-lg-10">
                     <input type="text" class="form-control" id="inputitemcode" placeholder="Item Code" name="item_code" value="<?php echo $item_code ?>" required>
                 </div>
             </div>
@@ -137,7 +138,7 @@ if(isset($_POST['submit']))
 
             <div class="form-group">
                 <label for="inpuname" class="col-lg-2 control-label text-right">Item Name</label>
-                <div class="col-lg-8">
+                <div class="col-lg-10">
                     <input type="text" class="form-control" id="inpuname" placeholder="Item Name" name="item_name" value="<?php echo $item_name ?>" required>
                 </div>
             </div>
@@ -145,8 +146,8 @@ if(isset($_POST['submit']))
 
 
             <div class="form-group">
-    <label for="category" class="col-lg-2 control-label">Item Category</label>
-    <div class="col-lg-8">
+    <label for="category" class="col-lg-3 control-label">Item Category</label>
+    <div class="col-lg-10">
         <select class="form-control" id="category" name="item_category" required>
             <option value="">Select Category</option>
             <!-- get category details from database -->
@@ -162,8 +163,8 @@ if(isset($_POST['submit']))
 
 
             <div class="form-group">
-    <label for="subcategory" class="col-lg-2 control-label">Item Sub Category</label>
-    <div class="col-lg-8">
+    <label for="subcategory" class="col-lg-3 control-label">Item Sub Category</label>
+    <div class="col-lg-10">
         <select class="form-control" id="subcategory" name="item_subcategory" required>
             <option value="">Select Sub Category</option>
             <!-- get subcategory details from database -->
@@ -178,7 +179,7 @@ if(isset($_POST['submit']))
 </div>
             <div class="form-group">
                 <label for="inputquantity" class="col-lg-2 control-label text-right">Quantity</label>
-                <div class="col-lg-8">
+                <div class="col-lg-10">
                     <input type="number" class="form-control" id="inputquantity" placeholder="Quantity" name="quantity" value="<?php echo $quantity ?>" required>
                 </div>
             </div>
@@ -186,7 +187,7 @@ if(isset($_POST['submit']))
 
             <div class="form-group">
                 <label for="inputunitprice" class="col-lg-2 control-label text-right">Unit Price</label>
-                <div class="col-lg-8">
+                <div class="col-lg-10">
                     <input type="number" class="form-control" id="inputunitprice" placeholder="Unit Price" name="unit_price" value="<?php echo $unit_price ?>" required>
                 </div>
             </div>
@@ -200,6 +201,7 @@ if(isset($_POST['submit']))
             </div>
         </fieldset>
     </form>
+    <br>
 </div>
 </div>
 

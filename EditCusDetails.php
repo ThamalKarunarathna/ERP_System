@@ -92,6 +92,7 @@ if(isset($_POST['submit'])) {
 <!-- Update form -->
 <div class="d-flex justify-content-center">
   <div class="card text-white bg-secondary" style="width: 800px;">
+  <br>
     <form id="customer-form" class="form-horizontal col-lg-8 offset-lg-2" method="POST">
         <fieldset>
             <div class="row pb-2">
@@ -101,7 +102,7 @@ if(isset($_POST['submit'])) {
             <br>
             <div class="form-group">
                 <label for="" class="col-lg-2 control-label">Title</label>
-                <div class="col-lg-8">
+                <div class="col-lg-10">
                     <select class="form-control" id="select" name="title">
                         <option>Select Your Title</option>
                         <option <?php if ($title === 'Mr') echo 'selected'; ?>>Mr</option>
@@ -114,30 +115,30 @@ if(isset($_POST['submit'])) {
             </div>
 
             <div class="form-group">
-                <label for="" class="col-lg-2 control-label text-right">First Name</label>
-                <div class="col-lg-8">
+                <label for="" class="col-lg-3 control-label text-right">First Name</label>
+                <div class="col-lg-10">
                     <input type="text" class="form-control" id="first_name" placeholder="First Name" name="first_name" value="<?php echo $first_name; ?>">
                 </div>
             </div>
         <br>
             <div class="form-group">
-                <label for="" class="col-lg-2 control-label text-right">Middle Name</label>
-                <div class="col-lg-8">
+                <label for="" class="col-lg-3 control-label text-right">Middle Name</label>
+                <div class="col-lg-10">
                     <input type="text" class="form-control" id="middle_name" placeholder="Middle Name" name="middle_name" value="<?php echo $middle_name; ?>">
                 </div>
             </div>
 
             <br>
             <div class="form-group">
-                <label for="" class="col-lg-2 control-label text-right">Last Name</label>
-                <div class="col-lg-8">
+                <label for="" class="col-lg-3 control-label text-right">Last Name</label>
+                <div class="col-lg-10">
                     <input type="text" class="form-control" id="last_name" placeholder="Last Name" name="last_name" value="<?php echo $last_name; ?>">
                 </div>
             </div>
             <br>
             <div class="form-group">
-                <label for="" class="col-lg-2 control-label text-right">Contact Number</label>
-                <div class="col-lg-8">
+                <label for="" class="col-lg-3 control-label text-right">Contact Number</label>
+                <div class="col-lg-10">
                     <input type="number" class="form-control" id="contact_no" placeholder="Contact Number" name="contact_no" value="<?php echo $contact_no; ?>">
                 </div>
             </div>
@@ -145,7 +146,7 @@ if(isset($_POST['submit'])) {
 
             <div class="form-group">
                 <label for="" class="col-lg-2 control-label text-right">District</label>
-                <div class="col-lg-8">
+                <div class="col-lg-10">
                     <select class="form-control" id="district" name="district">
                         <option>Select Your District</option>
                         <!-- get district names from the database -->
@@ -167,6 +168,7 @@ if(isset($_POST['submit'])) {
             </div>
         </fieldset>
     </form>
+    <br>
 </div>
 </div>
 
